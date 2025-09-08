@@ -1,0 +1,47 @@
+[
+  {
+    "code": "nas",
+    "name": "National Accounts Statistics (NAS)",
+    "desc": "Comprehensive statistical system providing estimates of national income, Gross Domestic Product (GDP), consumption, savings, capital formation, and related macroeconomic aggregates. It covers sectoral contributions, growth trends, and helps in understanding the overall economic performance of the country."
+  },
+  {
+    "code": "cpi",
+    "name": "Consumer Price Index (CPI)",
+    "desc": "An essential measure of inflation that tracks changes in the retail prices of goods and services consumed by households. It provides insights into the cost of living, purchasing power, and is used for policy formulation, wage indexation, and monetary decisions."
+  },
+  {
+    "code": "iip",
+    "name": "Index of Industrial Production (IIP)",
+    "desc": "A key indicator reflecting the growth and performance of the industrial sector, measuring the volume of production across manufacturing, mining, and electricity. It helps analyze short-term industrial trends and guides policy related to industrial development."
+  },
+  {
+    "code": "asi",
+    "name": "Annual Survey of Industries (ASI)",
+    "desc": "The most comprehensive data source on the organized factory sector in India. It provides detailed information on capital, employment, input–output structure, value added, and other economic parameters to understand the contribution of industries to the economy."
+  },
+  {
+    "code": "plfs",
+    "name": "Periodic Labour Force Survey (PLFS)",
+    "desc": "A large-scale household survey designed to estimate key employment and unemployment indicators. It captures labor force participation, worker characteristics, types of employment, wages, and provides quarterly and annual labor market statistics for informed policy-making."
+  },
+  {
+    "code": "asuse",
+    "name": "Annual Survey of Unincorporated Sector Enterprises (ASUSE)",
+    "desc": "Covers economic and operational details of unincorporated enterprises in the manufacturing, trade, and service sectors. It sheds light on the informal economy, employment generation, and business dynamics outside the registered factory sector."
+  },
+  {
+    "code": "ec",
+    "name": "Economic Census",
+    "desc": "Provides a complete count of all entrepreneurial units across the country engaged in various economic activities. It includes establishment size, sectoral distribution, ownership, employment characteristics, and acts as a benchmark database for business statistics."
+  },
+  {
+    "code": "mis",
+    "name": "Multiple Indicator Survey (MIS)",
+    "desc": "A household-level survey designed to provide reliable estimates of key social and demographic indicators. It includes data on education, health, sanitation, housing, and other welfare indicators to assist in monitoring social development goals and policy planning."
+  },
+  {
+    "code": "gs",
+    "name": "Gender Statistics (GS)",
+    "desc": "A comprehensive dataset that captures gender-disaggregated information across multiple sectors including education, employment, health, and social participation. It helps analyze gender gaps, informs policy decisions for equality and empowerment, and supports tracking of national and international gender-related goals and programs."
+  }
+]

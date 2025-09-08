@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Product & Indicator Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f4f6f9;
+    }
+
+    .box {
+      max-width: 720px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    input[type=text] {
+      width: 96%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 10px
+    }
+
+    button {
+      padding: 10px 14px;
+      margin-right: 8px;
+      font-size: 15px;
+      cursor: pointer
+    }
+
+    .res {
+      margin-top: 16px
+    }
+
+    .card {
+      background: #eef;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 8px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h2 style="text-align: center;">eSankhyiki Product Sementic Search</h2>
+    <input id="query" type="text" placeholder="Type your query (e.g. 'Labour force participation 2024')">
+    <div>
+      <button onclick="predict(true)">Search</button>
+    </div>
+    <div id="results" class="res"></div>
+  </div>
+
+  <script>
+    async function predict() {
+      const q = document.getElementById("query").value.trim();
+      if (!q) { alert("Please enter a query"); return; }
+      document.getElementById("results").innerHTML = "<em>Searching...</em>";
+
+      try {
+        const resp = await fetch("/predict", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: q })
+        });
+        const data = await resp.json();
+        const div = document.getElementById("results");
+        console.log(">>>>>data>>>>>", data)
+        if (!resp.ok) {
+          div.innerHTML = "<b style='color:red'>Error:</b> " + (data.error || JSON.stringify(data));
+          return;
+        }
+
+        let html = `<h3>Results for: "${q}"</h3>`;
+
+        if (data.dataset) {
+          html += `<div class="card"><b>Product:</b> ${data.dataset.name}</div>`;
+        } else {
+          html += "<i>No dataset matched.</i>";
+        }
+
+        if (data.indicator) {
+          html += `<div class="card"><b>Indicator:</b> ${data.indicator.name}
+               </div>`;
+        } else {
+          html += "<i>No indicator matched.</i>";
+        }
+
+        // if (data.filters) {
+
+        //   html += `<div class="card"><b>Filter:</b> ${data.filters.name} (Code: ${data.filters.code})<br>
+        //        Description: ${data.filters.desc}<br>
+        //        Score: ${(data.filters.score * 100).toFixed(2)}%</div>`;
+        // } else {
+        //   html += "<i>No filter matched.</i>";
+        // }
+        if (Array.isArray(data.filters) && data.filters.length > 0) {
+          let filterContent = '';
+
+          data.filters.forEach(fil => {
+            filterContent += `<b>${fil.filter_name}:</b> ${fil.option}<br>`;
+          });
+
+          html += `<div class="card">
+            <h3 style="margin-top: 0px;">Filters :</h3>
+             ${filterContent}
+           </div>`;
+        } else {
+          html += "<i>No filter matched.</i>";
+        }
+        div.innerHTML = html;
+      } catch (e) {
+        document.getElementById("results").innerHTML = "<b style='color:red'>Exception:</b> " + e;
+      }
+    }
+  </script>
+</body>
+
+</html>

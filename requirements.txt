@@ -1,0 +1,6 @@
+flask
+sentence-transformers==2.7.0
+faiss-cpu
+llama-cpp-python==0.2.90
+scikit-learn
+numpy

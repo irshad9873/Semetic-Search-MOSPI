@@ -1,0 +1,926 @@
+{
+  "datasets": {
+    "PLFS": {
+      "description": "Periodic Labour Force Survey (PLFS) provides detailed labour market statistics for India. It captures employment, unemployment, participation, types of employment, hours and days worked, and earnings for different population groups using standard tabulation frames (usual status, current weekly status, etc.). These indicators support policy analysis on job quality, wages, underemployment and sectoral employment patterns.",
+      "indicators": [
+        {
+          "name": "Labour Force Participation Rate",
+          "description": "The proportion of the working-age population (typically 15 years and above) that is either employed or actively seeking employment during the reference period. LFPR measures the size of the economically active population and is expressed as a percentage.",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"State": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"StatusCode": ["Usual Status (PS + SS)", "Current Weekly Status (CWS)", "Usual Principal Status (PS)"]},
+          {"Agegroup": ["15-29 years", "15-59 years", "15 years and above", "All Ages"]},
+          {"Religion": ["Hinduism", "Islam", "Christianity", "Sikhism", "All"]},
+          {"SocialGroup": ["Scheduled Tribe", "Scheduled Caste", "Other backward classes", "Others", "All"]},
+          {"GeneralEducationLevel": ["Not Literate", "Literate & upto primary", "Middle", "Secondary", "Higher Secondary", "Diploma/certificate Course", "Graduate", "Post Graduate & Above", "Secondary & Above"]},
+          {"HigherEducationLevel": ["Not Literate", "Literate & upto primary", "Middle", "Secondary", "Higher Secondary", "Diploma/certificate Course", "Graduate", "Post Graduate & Above", "Secondary & Above", "All"]}
+        ]
+        },
+        {
+          "name": "Worker Population Ratio",
+          "description": "The percentage of the total population who are employed (i.e., persons who did any work for pay or profit or worked without pay in a household enterprise) in the reference period. WPR indicates the share of people actually engaged in economic activity.",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"State": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"StatusCode": ["Usual Status (PS + SS)", "Current Weekly Status (CWS)", "Usual Principal Status (PS)"]},
+          {"Agegroup": ["15-29 years", "15-59 years", "15 years and above", "All Ages"]},
+          {"Religion": ["Hinduism", "Islam", "Christianity", "Sikhism", "All"]},
+          {"SocialGroup": ["Scheduled Tribe", "Scheduled Caste", "Other backward classes", "Others", "All"]},
+          {"GeneralEducationLevel": ["Not Literate", "Literate & upto primary", "Middle", "Secondary", "Higher Secondary", "Diploma/certificate Course", "Graduate", "Post Graduate & Above", "Secondary & Above"]},
+          {"HigherEducationLevel": ["Not Literate", "Literate & upto primary", "Middle", "Secondary", "Higher Secondary", "Diploma/certificate Course", "Graduate", "Post Graduate & Above", "Secondary & Above", "All"]}
+        ]
+        },
+        {
+          "name": "Unemployment Rate",
+          "description": "The share of the labour force who are not employed but are available for work and actively seeking employment during the reference period. It is expressed as a percentage of the labour force and signals labour market slack.",
+          "filters": [
+           {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"State": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"StatusCode": ["Usual Status (PS + SS)", "Current Weekly Status (CWS)", "Usual Principal Status (PS)"]},
+          {"Agegroup": ["15-29 years", "15-59 years", "15 years and above", "All Ages"]},
+          {"SocialGroup": ["Scheduled Tribe", "Scheduled Caste", "Other backward classes", "Others", "All"]},
+          {"GeneralEducationLevel": ["Not Literate", "Literate & upto primary", "Middle", "Secondary", "Higher Secondary", "Diploma/certificate Course", "Graduate", "Post Graduate & Above", "Secondary & Above"]},
+          {"HigherEducationLevel": ["Not Literate", "Literate & upto primary", "Middle", "Secondary", "Higher Secondary", "Diploma/certificate Course", "Graduate", "Post Graduate & Above", "Secondary & Above", "All"]}
+        ]
+        },
+        {
+          "name": "Percentage of regular wage/ salaried employees in usual status (ps+ss) in non-agriculture sector (NIC-2008 Divisions:05-99)",
+          "description": "Proportion of workers in the non-agricultural sectors (NIC-2008 divisions 05–99) who are in regular wage/salaried employment when measured in usual status (principal + subsidiary status). Expressed as a percentage of total workers in those sectors.",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"State": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"StatusCode": ["Usual Status (PS + SS)", "Current Weekly Status (CWS)", "Usual Principal Status (PS)"]},
+          {"Agegroup": ["15-29 years", "15-59 years", "15 years and above", "All Ages"]},
+          {"JobContract": ["With no written job contract", "Not eligible for paid leave", "Without any specified SSB*", "Not eligible for paid leave", "without written job contract and without any specified SSB*"]}
+          ]
+        },
+        {
+          "name": "Average wage/salary earnings (Rs. 0.00) during the preceding calendar month from regular wage/salaried employment among the regular wage/salaried employees in CWS",
+          "description": "Mean monthly earnings (in rupees) from regular wage/salaried employment for those classified as regular salaried employees in the Current Weekly Status (CWS). The reference is the preceding calendar month and captures base wages/salaries (excludes irregular receipts unless specified).",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"State": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"StatusCode": ["Usual Status (PS + SS)", "Current Weekly Status (CWS)", "Usual Principal Status (PS)"]},
+          {"Quarter": ["July-Sep", "Oct-Dec", "Jan-Mar", "Apr-Jun"]}
+        ]
+        },
+        {
+          "name": "Average wage earnings (Rs. 0.00) per day from casual labour work other than public works in CWS",
+          "description": "Average daily wage (in rupees) earned by persons engaged in casual labour outside public works programmes, measured for those in Current Weekly Status. Useful for comparing casual wage levels across regions and sectors.",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"State": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"Quarter": ["July-Sep", "Oct-Dec", "Jan-Mar", "Apr-Jun"]}
+        ]
+        },
+        {
+          "name": "Average gross earnings (Rs. 0.00) during last 30 days from self-employment among self-employed persons in CWS",
+          "description": "Mean gross receipts (in rupees) reported over the last 30 days by self-employed persons (own-account workers, unpaid family helpers, employers) captured in the Current Weekly Status, before deducting business expenses.",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"State": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"Quarter": ["July-Sep", "Oct-Dec", "Jan-Mar", "Apr-Jun"]}
+        ]
+        },
+        {
+          "name": "Average no. of days worked in a week for workers in CWS",
+          "description": "Average number of days worked per week by employed persons as recorded under Current Weekly Status. This indicator captures part-time vs full-time engagement and underemployment.",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"State": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"Quarter": ["July-Sep", "Oct-Dec", "Jan-Mar", "Apr-Jun"]},
+          {"BroadEmployment": ["Select All", "All", "All Self Employed", "Helper in household enterprise", "Own account worker, employer", "Casual labour", "regular wage/salary"]}
+        ]
+        },
+        {
+          "name": "Average number of hours actually worked per week considering all the economic activities performed during the week for workers in CWS",
+          "description": "Mean total hours actually worked in a week across all economic activities for persons employed (CWS). This measures weekly time commitment and is helpful to detect long hours or time poverty.",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"State": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"Quarter": ["July-Sep", "Oct-Dec", "Jan-Mar", "Apr-Jun"]},
+          {"BroadEmployment": ["Select All", "All", "All Self Employed", "Helper in household enterprise", "Own account worker, employer", "Casual labour", "regular wage/salary"]}
+        ]
+        },
+        {
+          "name": "Average number of hours available for additional work in a week for person with different broad activity status in employment in CWS",
+          "description": "Average spare time (hours per week) that employed persons report as available for additional paid work, disaggregated by broad activity status (e.g., self-employed, regular salaried, casual). Indicates potential underemployment or capacity to take extra work.",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"StatusCode": ["Usual Status (PS + SS)", "Current Weekly Status (CWS)", "Usual Principal Status (PS)"]},
+          {"Quarter": ["July-Sep", "Oct-Dec", "Jan-Mar", "Apr-Jun"]},
+          {"BroadEmployment": ["Select All", "All", "All Self Employed", "Helper in household enterprise", "Own account worker, employer", "Casual labour", "regular wage/salary"]}
+        ]
+        },
+        {
+          "name": "Average wage earnings (Rs.) per day from casual labour work by industry of work (industry sections of NIC-2008)",
+          "description": "Average daily earnings (in rupees) for casual labourers disaggregated by industry (NIC-2008 sections). This allows comparison of casual wage rates across industry groups and informs sectoral wage analysis.",
+          "filters": [
+          {"Year":["Select All", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18"]},
+          {"Sector": ["select all", "rural", "urban", "rural+urban"]},
+          {"Gender": ["Female", "Male", "Person", "All"]},
+          {"Industry": ["Select All", "Agriculture forestry and fishing", "Mining and quarrying", "Manufacturing", "Electricity, gas, steam and air conditioning supply", "Water supply; sewerage, waste management and remediation activities", "Wholesale and retail trade; repair of motor vehicles and motorcycles", "Transportation and storage", "Accommodation and Food service activities", "Information and communication", "Financial and insurance activities", "Real estate activities", "Professional scientific and technical activities", "Administrative and support service activities", "Public administration and defence; compulsory social security", "Education", "Human health and social work activities", "Arts, entertainment and recreation", "Other service activities", "Activities of households as employers undifferentiated goods and services producing activities of households for own use", "Activities of extraterritorial organizations and bodies", "All"]}
+        ]
+        }
+      ]
+    },
+    "Gender Statistics": {
+      "description": "Gender Statistics indicators capturing demographic trends, fertility, health, education, labour, financial inclusion, political participation, crimes against women, disability, and social empowerment aspects.",
+      "indicators": [
+        {
+          "name": "Trend in Population",
+          "description": "Overall demographic trend showing population growth and changes over time."
+        },
+        {
+          "name": "Sex Ratio",
+          "description": "Number of females per 1,000 males in the population."
+        },
+        {
+          "name": "Average Annual Growth Rate of Population",
+          "description": "Rate of annual growth in total population over a specified period."
+        },
+        { "name":"Distribution of Rape Victims",
+          "description": "forcefully sex ,rape  women, female,girls , india ."
+
+        },
+        {
+          "name": "Percentage Distribution of Projected Population",
+          "description": "Estimated distribution of projected population across age groups and regions."
+        },
+        {
+          "name": "Sex ratio in context of developmental planning",
+          "description": "Sex ratio data considered in policy planning and resource allocation."
+        },
+        {
+          "name": "State-wise Sex Ratio",
+          "description": "Sex ratio disaggregated by states and union territories."
+        },
+        {
+          "name": "Sex ratio at birth for bigger States based on Sample Registration System",
+          "description": "Sex ratio at birth for large states as per SRS estimates."
+        },
+        {
+          "name": "General Fertility Rate",
+          "description": "Number of live births per 1,000 women of reproductive age (15-49 years)."
+        },
+        {
+          "name": "Age-specific Fertility rate",
+          "description": "Fertility rate by specific age groups of women."
+        },
+        {
+          "name": "Total Fertility Rate",
+          "description": "Average number of children born to a woman during her reproductive years."
+        },
+        {
+          "name": "Percentage distribution of live births",
+          "description": "Share of live births across demographic groups."
+        },
+        {
+          "name": "Adolescent Fertility Rates",
+          "description": "Birth rate among adolescent women aged 15–19 years."
+        },
+        {
+          "name": "Age Specific Fertility Rate by level of education of women",
+          "description": "Fertility rates by age groups, further classified by women’s educational attainment."
+        },
+        {
+          "name": "Women's Mean Age at Marriage",
+          "description": "Average age of women at the time of marriage."
+        },
+        {
+          "name": "Year Wise Infant Mortality Rate",
+          "description": "Number of deaths of infants (below 1 year) per 1,000 live births across years."
+        },
+        {
+          "name": "State/UT Wise Infant Mortality Rate",
+          "description": "Infant mortality rates disaggregated by state and union territory."
+        },
+        {
+          "name": "Under-Five Mortality Rates (U5MR)",
+          "description": "Number of deaths of children under age 5 per 1,000 live births."
+        },
+        {
+          "name": "Year Wise Life Expectancy at birth",
+          "description": "Average life expectancy at birth across different years."
+        },
+        {
+          "name": "State/UT wise Life Expectancy at birth",
+          "description": "Life expectancy at birth categorized by state/UT."
+        },
+        {
+          "name": "Life Expectation at age 60",
+          "description": "Average life expectancy for individuals at age 60."
+        },
+        {
+          "name": "Maternal Mortality Ratio",
+          "description": "Maternal deaths per 100,000 live births."
+        },
+        {
+          "name": "Maternity Care Indicators",
+          "description": "Indicators related to antenatal, delivery, and postnatal care for women."
+        },
+        {
+          "name": "Percentage of Births Attended by Skilled Health Personnel",
+          "description": "Share of deliveries attended by qualified doctors, nurses, or midwives."
+        },
+        {
+          "name": "Percentage of married women use any modern method of family planning",
+          "description": "Proportion of currently married women using modern contraception methods."
+        },
+        {
+          "name": "Unmet Need for Family Planning",
+          "description": "Percentage of married women who want to delay or stop childbearing but are not using contraception."
+        },
+        {
+          "name": "Need for Family Planning Satisfied with Modern Methods (Proportion of Women)",
+          "description": "Proportion of demand for family planning met through modern contraceptive methods."
+        },
+        {
+          "name": "Current tobacco use (15 years or above)",
+          "description": "Percentage of persons aged 15 years or above currently using tobacco."
+        },
+        {
+          "name": "Proportion of Adults who are Obese (BMI >= 30.0)",
+          "description": "Percentage of adults with body mass index (BMI) greater than or equal to 30."
+        },
+        {
+          "name": "Number of new HIV infections per 1,000 uninfected population",
+          "description": "Incidence of HIV infection per 1,000 uninfected individuals."
+        },
+        {
+          "name": "Number of PLHIV alive and on ART at the end of January 2025",
+          "description": "Total persons living with HIV who are on antiretroviral therapy as of January 2025."
+        },
+        {
+          "name": "Cases and Deaths due to Acute Diarrhoeal Diseases",
+          "description": "Reported cases and deaths caused by acute diarrhoeal diseases."
+        },
+        {
+          "name": "Cases and Deaths due to Cholera Infection",
+          "description": "Reported incidence and mortality due to cholera."
+        },
+        {
+          "name": "Cases and Deaths due to Enteric Fever (Typhoid) Infection",
+          "description": "Reported incidence and deaths due to enteric fever (typhoid)."
+        },
+        {
+          "name": "Cases and Deaths due to Acute Respiratory Infection",
+          "description": "Cases and mortality due to acute respiratory infections."
+        },
+        {
+          "name": "Cases and Deaths due to Neonatal Tetanus Infection",
+          "description": "Reported neonatal tetanus infections and related mortality."
+        },
+        {
+          "name": "Cases and Deaths due to Tetanus Infection",
+          "description": "Reported incidence and deaths caused by tetanus (non-neonatal)."
+        },
+        {
+          "name": "Cases and Deaths due to Diphtheria Infection",
+          "description": "Cases and mortality caused by diphtheria."
+        },
+        {
+          "name": "Cases and Deaths due to Whooping Cough infection",
+          "description": "Reported cases and deaths caused by pertussis (whooping cough)."
+        },
+        {
+          "name": "Cases and Deaths due to Measles Infection",
+          "description": "Incidence and mortality due to measles."
+        },
+        {
+          "name": "Cases and Deaths due to Viral Hepatitis (All Causes)",
+          "description": "Reported hepatitis infections and associated deaths."
+        },
+        {
+          "name": "Cases and Deaths due to Rabies Infection",
+          "description": "Incidence and mortality caused by rabies."
+        },
+        {
+          "name": "Cases and Deaths due to Pneumonia Infection",
+          "description": "Reported pneumonia cases and related deaths."
+        },
+        {
+          "name": "Cases and Deaths due to Meningococcal Meningitis Infection",
+          "description": "Reported cases and mortality due to meningococcal meningitis."
+        },
+        {
+          "name": "Cases and Deaths due to Syphilis",
+          "description": "Incidence and mortality due to syphilis infection."
+        },
+        {
+          "name": "Cases and Deaths due to Gonococcal Infection",
+          "description": "Reported cases and deaths caused by gonococcal infection."
+        },
+        {
+          "name": "Cases and Deaths due to Chicken Pox",
+          "description": "Incidence and deaths due to varicella (chicken pox)."
+        },
+        {
+          "name": "Cases and Deaths due to Encephalitis Infection",
+          "description": "Reported encephalitis infections and associated mortality."
+        },
+        {
+          "name": "Cases and Deaths due to Viral Meningitis Infection",
+          "description": "Reported cases and deaths due to viral meningitis."
+        },
+        {
+          "name": "Cases and Deaths due to Snake Bite",
+          "description": "Incidence and mortality due to snake bites."
+        },
+        {
+          "name": "Women undergone a screening test for cervical cancer and breast cancer (%)",
+          "description": "Percentage of women screened for cervical and breast cancers."
+        },
+        {
+          "name": "Women who have comprehensive knowledge of HIV/AIDS (%)",
+          "description": "Percentage of women with complete knowledge about HIV/AIDS transmission and prevention."
+        },
+        {
+          "name": "Women whose Body Mass Index is below normal and who are overweight or obese",
+          "description": "Proportion of women categorized as underweight, overweight, or obese based on BMI."
+        },
+        {
+          "name": "Ayush Registered Practitioners (Doctors)",
+          "description": "Number of doctors registered under AYUSH systems of medicine."
+        },
+        {
+          "name": "Number of Registered Nurses",
+          "description": "Total number of nurses registered in the healthcare system."
+        }
+      ]
+    }, 
+    "ASUSE": {
+      "description": "All-India Survey of Unincorporated Non-Agricultural Enterprises (ASUSE) indicators covering enterprise characteristics, workers, and financial performance. The Annual Survey of Unincorporated Sector Enterprises (ASUSE) focuses on capturing the economic and operational characteristics of unincorporated non-agricultural establishments in manufacturing, trade, and services sectors.",
+      "indicators": [
+        {
+          "name": "Estimated Number of Establishments Pursuing Mixed Activities",
+          "description": "Estimated Number of Establishments Pursuing Mixed Activities for Each Activity Category refers to the approximate count of enterprises that engage in multiple types of economic activities rather than specializing in a single one, within a given activity category (like manufacturing, trade, or services).",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities",  "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Estimated Number of Establishments Pursuing Mixed Activities",
+          "description": "State/UT-wise Estimated Number of Establishments Pursuing Mixed Activities: This estimate provides the count of unincorporated enterprises that do not fall neatly into a single activity category (manufacturing, trade, or services).",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": [["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Per 1000 Distribution of Establishments by Type of Ownership",
+          "description": "Per 1000 Distribution of Establishments by Type of Ownership: This distribution refers to how many out of every 1000 unincorporated establishments belong to each type of ownership category. The ownership structure indicates the legal and operational nature of the enterprise and plays a crucial role in policy formulation, credit access, and support programs.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities",  "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Ownership Type": ["Select All", "Partnership with Members of Same Household", "Partnership with Members of different Households", "SHG", "Society/Trusts/Club/Association/Body of Individuals", "Co-operatives", "Others", "All", "Proprietary-Male", "Proprietary-Female", "Proprietary-All" ]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Per 1000 Distribution of Establishments by Type of Ownership",
+          "description": "State/UT-wise Per 1000 Distribution of Establishments by Type of Ownership: This metric expresses the number of establishments per 1,000 in each ownership category, offering insights into the structure of India’s unincorporated sector.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": [["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Ownership Type": ["Select All", "Partnership with Members of Same Household", "Partnership with Members of different Households", "SHG", "Society/Trusts/Club/Association/Body of Individuals", "Co-operatives", "Others", "All", "Proprietary-Male", "Proprietary-Female", "Proprietary-All" ]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Per 1000 Distribution of Proprietary and Partnership Establishments by Level of General Education of Owner-Major Partner",
+          "description": "Per 1000 Distribution of Proprietary and Partnership Establishments by Level of General Education of Owner-Major Partner: This metric expresses the detailing education level categories of owners establishments per 1,000 in each ownership category, offering insights into the structure of India’s unincorporated sector.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"General Education Level": ["Select All", "Not Literate", "Literate Below Primary", "Literate Primary and Above but Below Secondary", "Literate Secondary and Above but Below Higher Secondary", "Literate Higher Secondary and Above but Below Graduate", "Literate Graduate and Above", "All"]}
+          ]
+        },
+        {
+          "name": "Per 1000 Distribution of Prop. & Partnership Establishments by Social Group of Owner-Major Partner",
+          "description": "Per 1000 Distribution of Prop. & Partnership Establishments by Social Group of Owner-Major Partner: This metric provides insight into the social composition of enterprise ownership across India.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Social Group of Owner/ Major Partner": ["Scheduled Tribe", "Scheduled Caste", "Other Backward Classes", "Others", "Not Known", "All", "Select All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Per 1000 Distribution of Prop. & Partnership Establishments by Social Group of Owner-Major Partner",
+          "description": "State/UT-wise Per 1000 Distribution of Prop. & Partnership Establishments by Social Group of Owner-Major Partner: This statistical indicator from the All India Survey of Unincorporated Sector Enterprises (ASUSE) reflects the relative distribution (per 1000) of Proprietary and Partnership enterprises based on the social group (caste category) of the owner or major partner, across different States and Union Territories of India.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Social Group of Owner/ Major Partner": ["Scheduled Tribe", "Scheduled Caste", "Other Backward Classes", "Others", "Not Known", "All", "Select All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Per 1000 Distribution of Prop. & Partnership Estt. by Number of Other Economic Activities",
+          "description": "Per 1000 Distribution of Prop. & Partnership Estt. by Number of Other Economic Activities: This indicator shows how many establishments, per 1000, are involved in multiple economic activities apart from their primary business. This provides insight into the economic multitasking or diversification strategies of enterprises in the unincorporated sector.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Social Group of Owner/ Major Partner": ["Scheduled Tribe", "Scheduled Caste", "Other Backward Classes", "Others", "Not Known", "All", "Select All"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Number Per 1000 of Establishments Maintaining any Bank Account-Post Office Savings Bank Account",
+          "description": "State/UT-wise Number Per 1000 of Establishments Maintaining any Bank Account-Post Office Savings Bank Account: This indicator This metric shows how many out of every 1000 unincorporated establishments in a given State or Union Territory maintain a bank account, including Commercial bank accounts (public/private), Cooperative bank accounts and Post Office savings bank accounts.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Account Holder": ["Select All", "Maintaining Bank/PO Savings Account", "Account in the Name of Owner", "Account in the Name of Establishments"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Per 1000 Distribution of Establishments by Type of Location",
+          "description": "Per 1000 Distribution of Establishments by Type of Location: This indicator refers to the classification of enterprises based on the physical setting or space from which they operate. This indicator helps assess the infrastructure environment and degree of formality of business operations in the unincorporated sector.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Location of Establishment": ["Select All", "Within Household Premises", "Outside Household Premises with Fixed Premises of Permanent Structure", "Outside Household Premises with Fixed Premises of Temporary Structure / Kiosk / Stall", "Outside Household Premises with Fixed Premises but Without any Structure", "Outside Household Premises Without Fixed Premises like Mobile Market", "Outside Household Premises Without Fixed Premises like Street Vendors etc.", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Per 1000 Distribution of Establishments by Type of Location",
+          "description": "State/UT-wise Per 1000 Distribution of Establishments by Type of Location: This indicator refers the type of location where an establishment operates is a critical parameter. This helps policymakers and planners understand the nature of business environments across states and union territories (UTs), guiding infrastructure support and spatial planning of economic activities.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Location of Establishment": ["Select All", "Within Household Premises", "Outside Household Premises with Fixed Premises of Permanent Structure", "Outside Household Premises with Fixed Premises of Temporary Structure / Kiosk / Stall", "Outside Household Premises with Fixed Premises but Without any Structure", "Outside Household Premises Without Fixed Premises like Mobile Market", "Outside Household Premises Without Fixed Premises like Street Vendors etc.", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Per 1000 Distribution of Establishments by Nature of Operation",
+          "description": "Per 1000 Distribution of Establishments by Nature of Operation: This indicator refers to how enterprises conduct their business activities over time. This classification helps in understanding the operational continuity and stability of enterprises across different sectors and regions in India.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Nature of operations": ["Select All", "Perennial", "Seasonal", "Casual", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Per 1000 Distribution of Establishments by Nature of Operation",
+          "description": "State/UT-wise Per 1000 Distribution of Establishments by Nature of Operation: This indicator refers to how enterprises conduct their business activities over time across the States. This classification helps in understanding the operational continuity and stability of enterprises across different sectors and regions in India.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Nature of operations": ["Select All", "Perennial", "Seasonal", "Casual", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Per 1000 Distribution of Establishments by Number of Months Operated During Last 365 Days",
+          "description": "Per 1000 Distribution of Establishments by Number of Months Operated During Last 365 Days: This indicator refers racks how many months an establishment was active during the reference year. This helps assess business continuity, seasonality, and informality across enterprises.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"No. of months operated": ["Select All", "<= 3 Months", "4 to 6 Months", "7 to 9 Months", "> 9 Months", "All", "Average no. of Months Operated"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Per 1000 Distribution of Establishments by Nature of Operation",
+          "description": "State/UT-wise Per 1000 Distribution of Establishments by Nature of Operation: This indicator refers to how enterprises conduct their business activities over time. This classification helps in understanding the operational continuity and stability of enterprises across different sectors and regions in India.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"No. of months operated": ["Select All", "<= 3 Months", "4 to 6 Months", "7 to 9 Months", "> 9 Months", "All", "Average no. of Months Operated"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Per 1000 Distribution of Establishments by Number of Hours Normally Worked in a Day",
+          "description": "Per 1000 Distribution of Establishments by Number of Hours Normally Worked in a Day: This indicator the intensity of business activity. And number of working hours an establishment operates in a day",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"No. of working hours": ["Select All", "<4", "4-7", "8-11", ">11", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Per 1000 Distribution of Establishments by Number of Hours Normally Worked in a Day",
+          "description": "State/UT-wise Per 1000 Distribution of Establishments by Number of Hours Normally Worked in a Day: This indicator the intensity of business activity across the States/UTs. And number of working hours an establishment operates in a day",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"No. of working hours": ["Select All", "<4", "4-7", "8-11", ">11", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Number of Per 1000 of Establishments which are NPIs (by type of majot receipts) and non-NPIs",
+          "description": "Number of Per 1000 of Establishments which are NPIs (by type of majot receipts) and non-NPIs:These are entities formed to produce goods or services without profit intent. They cannot distribute surplus income to their founders or operators, even if they generate surplus revenue.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"NPI Status": ["Select All", "NPI with Major Receipts from Donation/Grants", "NPI with Major Receipts from Other Sources", "Non-NPI", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Number Per 1000 of Establishments Using Computers and Using Internet During Last 365 Days",
+          "description": "Number Per 1000 of Establishments Using Computers and Using Internet During Last 365 Days: This tracks digital adoption by establishments and is assessed through indicators such as computer usage and internet usage over the last 365 days. These indicators provide valuable insights into the digital inclusion, technological readiness, and modernization of enterprises in the informal economy.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Sub Indicator": ["Select All", "Using Internet", "Using Computer", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Number Per 1000 of Establishments Using Computers and Using Internet During Last 365 Days",
+          "description": "State/UT-wise Number Per 1000 of Establishments Using Computers and Using Internet During Last 365 Days: This tracks digital adoption by establishments across States/Uts and is assessed through indicators such as computer usage and internet usage over the last 365 days. These indicators provide valuable insights into the digital inclusion, technological readiness, and modernization of enterprises in the informal economy.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Sub Indicator": ["Select All", "Using Internet", "Using Computer", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Number Per 1000 of Establishments Registered Under Different Acts-Authorities",
+          "description": "Number Per 1000 of Establishments Registered Under Different Acts-Authorities: This reflects how many enterprises per 1000 have obtained legal recognition or approval from one or more regulatory authorities under Udyam / MSME Registration, GST (Goods and Services Tax), Shop and Establishment Act / Municipal License, Factory / Bidi Act, Others like FSSAI, Directorate of Industries, etc.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Sub Indicator": ["Select All", "Acts / Agency of Registration (except Companies Act)", "not Registered", "All"]},
+            {"Acts/ Agency of Registration": ["Shops & Estb. Act", "Indian Trust Act, 1882", "Societies Reg. Act, 1860", "Co-operative Soc. Act, 1912", "Club/Associations etc.", "CGST Act", "EPFO/ESIC", "State Specefic License/registration", "Regional Transport Office (RTO)", "Others", "Not Applicable", "Select All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Number Per 1000 of Establishments Registered Under Different Acts-Authorities",
+          "description": "State/UT-wise Number Per 1000 of Establishments Registered Under Different Acts-Authorities: This reflects how many enterprises across States/UTs per 1000 have obtained legal recognition or approval from one or more regulatory authorities under Udyam / MSME Registration, GST (Goods and Services Tax), Shop and Establishment Act / Municipal License, Factory / Bidi Act, Others like FSSAI, Directorate of Industries, etc.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Sub Indicator": ["Select All", "Acts / Agency of Registration (except Companies Act)", "not Registered", "All"]},
+            {"Acts/ Agency of Registration": ["Shops & Estb. Act", "Indian Trust Act, 1882", "Societies Reg. Act, 1860", "Co-operative Soc. Act, 1912", "Club/Associations etc.", "CGST Act", "EPFO/ESIC", "State Specefic License/registration", "Regional Transport Office (RTO)", "Others", "Not Applicable", "Select All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Estimated Number of Establishments Serving as Franchisee Outlet",
+          "description": "State/UT-wise Estimated Number of Establishments Serving as Franchisee Outlet: This reflects how many enterprises across States/UTs are operating under a franchise model (e.g., brand-owned retail, services outlets licensed by larger entities.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]}
+          ]
+        },
+        {
+          "name": "Estimated Number of Workers by Nature of Employment and Gender",
+          "description": "Estimated Number of Workers by Nature of Employment and Gender: This provides comprehensive data on employment and enterprise characteristics in the non-agricultural unincorporated sector of India based on the gender and type of employment.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Gender": ["Select All", "Female", "Male", "All"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Nature of Employment": ["Select All", "Full Time", "Part Time", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Estimated Number of Workers by Nature of Employment and Gender",
+          "description": "State/UT-wise Estimated Number of Workers by Nature of Employment and Gender: This provides comprehensive data on employment and enterprise characteristics across States/UTs in the non-agricultural unincorporated sector of India based on the gender and type of employment.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Gender": ["Select All", "Female", "Male", "All"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Nature of Employment": ["Select All", "Full Time", "Part Time", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Estimated Number of Workers by Type of Workers",
+          "description": "Estimated Number of Workers by Type of Workers: This categorize workers into three major categories based on how they participate in the enterprise based on Hored worker, Own Account Workers and Unpaid family workers. The classification is designed to reflect the structure of labor in India's informal and unincorporated sector (excluding agriculture and construction).",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Gender": ["Select All", "Female", "Male", "All"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Type of Workers": ["Select All", "Working Owners", "Formal Hired Workers", "Informal Hired Workers", "Unpaid Family Member", "Other Workers", "Total"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Estimated Number of Workers by Type of Workers",
+          "description": "State/UT-wise Estimated Number of Workers by Type of Workers: This refers to the average annual compensation paid by informal enterprises to each hired worker. This is an important indicator used to measure the earnings level, wage trends, and labor value within India’s unincorporated (informal) sector.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Gender": ["Select All", "Female", "Male", "All"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Type of Workers": ["Select All", "Working Owners", "Formal Hired Workers", "Informal Hired Workers", "Unpaid Family Member", "Other Workers", "Total"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Estimated Annual Emoluments (Rs.) Per Hired Worker",
+          "description": null,
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Sub Indicator": ["Select All", "estimated number of hired workers", "Annual Emoluments (Rs.) Per Hired Worker"]},
+            {"Hired Worker": ["Select All", "Formal", "Informal", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Estimated Annual Emoluments (Rs.) Per Hired Worker",
+          "description": "State/UT-wise Estimated Annual Emoluments (Rs.) Per Hired Worker: This refers to the average yearly amount of compensation paid by unincorporated enterprises to each hired worker across States/UTs.It includes Wages and salaries (regular and casual), Bonuses and overtime payments, Gratuities, Employer contributions to schemes like Provident Fund (PF), Employee State Insurance (ESI), etc. and any non-cash benefits, if quantifiable (e.g., food, accommodation)",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Sub Indicator": ["Select All", "estimated number of hired workers", "Annual Emoluments (Rs.) Per Hired Worker"]},
+            {"Hired Worker": ["Select All", "Formal", "Informal", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Estimated Annual Gross Value Added (GVA) Per Worker (Rs.)",
+          "description": "Estimated Annual Gross Value Added (GVA) Per Worker (Rs.): This refers to the average value of output generated per worker annually in unincorporated, non-agricultural enterprises. It is a measure of the economic productivity of each worker.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Estimated Annual Gross Value Added (GVA) Per Worker (Rs.)",
+          "description": "State/UT-wise Estimated Annual Gross Value Added (GVA) Per Worker (Rs.): This refersto the average annual economic output contributed by each worker within unincorporated, non agricultural enterprises in a given State or Union Territory.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Estimated Annual Gross Value Added (GVA) Per Establishment (Rs.)",
+          "description": "Estimated Annual Gross Value Added (GVA) Per Establishment (Rs.): This refers to the average economic value generated in a year by a single unincorporated enterprise in the non-agricultural sector. It is a measure of enterprise-level productivity.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Activity Category": ["Select All", "Cotton Ginning, Cleaning and Bailing", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork, Except Furniture, Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals, Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products, Except Machinery and Equipment", "Manufacture of Electrical Equipment", "Manufacture of Computer, Electronic and Optical Products", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles, Trailers and Semi- Trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture", "Other Manufacturing", "Repair and Installation of Machinery and Equipment", "Manufacturing Activities", "Non-captive Electricity Generation and Transmission", "Wholesale and Retail Trade of Motor Vehicles and Motor Cycles", "Maintenance and Repair of Motor Vehicles and Motor Cycles", "Wholesale on a Fee or Contract Basis", "Other Wholesale Trade", "Other Retail Trade", "Trading Activities", "Accommodation", "Food and Accommodation Service Activities", "Land Transport", "Water Transport", "Warehousing and Storage", "Support Activities for Transportation, Postal and Courier Activities", "Information and Communication", "Financial Service Activities Except Insurance and Pension Funding", "Other Financial Activities", "Real Estate Activities", "Professional, Scientific and Technical Activities", "Administrative and Support Service Activities", "Education", "Human Health and Social Work Activities", "Other Community, Social and Personal Service Activities", "Other Services", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "State/UT-wise Estimated Annual Gross Value Added (GVA) Per Establishment (Rs.)",
+          "description": "State/UT-wise Estimated Annual Gross Value Added (GVA) Per Establishment (Rs.): This represents the average economic value produced by a single unincorporated enterprise over one year in that region for specific State/UT.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Establishment Type": ["Select All", "Hired Worker Establishments (HWE)", "Own Account Establishments(OAE)", "All Establishments(All)"]}
+          ]
+        },
+        {
+          "name": "Number Per 1000 of Establishments Using Internet by Type of Its Use",
+          "description": "Number Per 1000 of Establishments Using Internet by Type of Its Use: This represents how many establishments (per 1,000) have used the internet in the preceding 365 days, categorized by type of enterprise and broad activity sector (Manufacturing, Trade, Other Services). It reflects the digital adoption intensity within the unincorporated, non-agricultural sector.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"State/UT": ["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Usage of internet": ["Select All", "Receiving Orders for Goods and Services (Making Sales)", "Placing Order for Goods and Services (Making Purchases)", "Sending and Receiving Emails", "Telephoning Over Internet/voip/ Video Conferencing", "Getting Information About Goods and Services", "Getting Information From General Government Organizations", "Interacting with General Government Organizations", "Internet Banking", "Accessing Other Financial Services", "Providing Customer Services", "Delivering Products Online", "Internal or External Recruitment", "Staff Training"]}
+          ]
+        },
+        {
+          "name": "Estimated Value of Key Characteristics by Number of Workers",
+          "description": "Estimated Value of Key Characteristics by Number of Workers: reflects how economic indicators vary across enterprises of different sizes based on their number of workers employed. It provides insights into relationships between scale and performance within the informal sector.",
+          "filters": [
+            {"Year": ["Select All", "2023-24", "2022-23", "2021-22"]},
+            {"Sector": ["Select All", "Rural", "Urban", "Combined"]},
+            {"Broad Activity Category": ["Select All", "Manufacturing", "Trade", "Other Services", "All"]},
+            {"Worker Characterstics": ["Select All", "Input Per Worker(in Rs. ‘000)", "Output Per Worker(in Rs. ‘000)", "Gva Per Worker(in Rs. ‘000)", "Gva Per Establish-ment(in Rs. ‘000)", "Fixed Assets* Per Worker(in Rs. ‘000)", "Fixed Assets* Per Establishment(in Rs. ’000)", "Outstanding Loan Per Worker(in Rs. ‘000)", "Outstanding Loan Per Establishment(in Rs. ‘000)"]},
+            {"Worker Number": ["Select All", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "20+"]}
+          ]
+        }
+      ]
+    },
+    "IIP": {
+      "description": "The Index of Industrial Production is a quantitative index; the production of the items being expressed in physical terms. The Index is compiled by taking into account the quantities of items produced during the current month, vis-à-vis the average monthly production in the base year. Source: National Metadata Structure (NMDS) for Statistical Products.",
+      "indicators": [
+        {
+          "name": "1993-94",
+          "description": "",
+          "filters": [
+            {"Select Frequency":["Annually", "Monthly"]},
+            {"Financial Year":["2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95"]},
+            {"Type":["Select All", "Sectoral", "Use-based category", "General"]},
+            {"Category":["Select All", "Mining", "Manufacturing", "Electricity", "General", "Primary Goods", "Capital Goods", "Intermediate Goods", "Infrastructure/ Construction Goods", "Consumer Durables", "Consumer Non-durables", "Basic Goods"]},
+            {"Subcategory":["Select All", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork", "Except Furniture; Manufacture of Articles of Straw and Plaiting Materials", 
+            "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals", "Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", 
+            "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products", "Except Machinery and Equipment", "Manufacture of Computer", "Electronic and Optical Products", "Manufacture of Electrical Equipment", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles", "Trailers and Semi-trailers", "Manufacture of Other Transport Equipment", 
+            "Manufacture of Furniture", "Other Manufacturing", "Manufacture of Food Products and Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel; Dressing and Dyeing of Fur", "Tanning and Dressing of Leather; Manufacture of Luggage", "Handbags", "Saddlery", "Harness and Footwear", "Manufacture of Wood and of Products of Wood and Cork", 
+            "Except Furniture; Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Publishing", "Printing and Reproduction of Recorded Media", "Manufacture of Coke", "Refined Petroleum Products and Nuclear Fuel", "Manufacture of Chemicals and Chemical Products", "Manufacture of Rubber and Plastics Products", 
+            "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products", "Except Machinery and Equipment", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Office", "Accounting and Computing Machinery", "Manufacture of Electrical Machinery and Apparatus N.e.c.", "Manufacture of Radio", 
+            "Television and Communication Equipment and Apparatus", "Manufacture of Medical", "Precision and Optical Instruments", "Watches and Clocks", "Manufacture of Motor Vehicles", "Trailers and Semi-trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture; Manufacturing N.e.c.", "Recycling", "Manufacture of Food Products", "Manufacture of Beverages", 
+            "Tobacco and Related_x0002_products", "Manufacture of Cotton Textiles", "Manufacture of Wool Silk and Man-made Fibre Textiles", "Manufacture of Jute and Other Vegetable Fibre Texliies (except Cotton)", "Manufacture of Textile Products (including Wearing Apparel)", "Manufacture of Wood and Wood Products; Furniture and Fixtures", "Manufacture of Paper and Paper Products and Printing Publishing & Allied Industries", 
+            "Manufacture of Leather and Products of Leather", "Fur &:: Substitutes of Leather", "Manufacture of Basic Chemicals and Chemical Products (except Products of Petroleum and Coal)", "Manufacture of Rubber", "Plastic", "Petroleum and Coal Products; Processing of Nuclear Fuels", "Manufacture of Non-metallic Mineral Products", "Basic Metal and Alloys Industries", 
+            "Manufacture of Metal Products and Parts", "Except Machinery and Equipment", "Manufacturing of Machinery and Equipment Other Than Transport Manufacture equipment of Machinery (manufacture and Equipment of Scientific Otherequip- Than Ment", "Photographic! Cinematographic Equipment and Watches & Clocks is C1assifiedindivision 38)", "Manufacture of Transport Equipment and Parts", "Other Manufacturing Industries", "Repair of Capital Goods"]}
+          ]
+        },
+        {
+          "name": "2004-05",
+          "description": "",
+          "filters": [
+            {"Select Frequency":["Annually", "Monthly"]},
+            {"Financial Year":["2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95"]},
+            {"Type":["Select All", "Sectoral", "Use-based category", "General"]},
+            {"Category":["Select All", "Mining", "Manufacturing", "Electricity", "General", "Primary Goods", "Capital Goods", "Intermediate Goods", "Infrastructure/ Construction Goods", "Consumer Durables", "Consumer Non-durables", "Basic Goods"]},
+            {"Subcategory":["Select All", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork", "Except Furniture; Manufacture of Articles of Straw and Plaiting Materials", 
+            "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals", "Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", 
+            "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products", "Except Machinery and Equipment", "Manufacture of Computer", "Electronic and Optical Products", "Manufacture of Electrical Equipment", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles", "Trailers and Semi-trailers", "Manufacture of Other Transport Equipment", 
+            "Manufacture of Furniture", "Other Manufacturing", "Manufacture of Food Products and Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel; Dressing and Dyeing of Fur", "Tanning and Dressing of Leather; Manufacture of Luggage", "Handbags", "Saddlery", "Harness and Footwear", "Manufacture of Wood and of Products of Wood and Cork", 
+            "Except Furniture; Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Publishing", "Printing and Reproduction of Recorded Media", "Manufacture of Coke", "Refined Petroleum Products and Nuclear Fuel", "Manufacture of Chemicals and Chemical Products", "Manufacture of Rubber and Plastics Products", 
+            "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products", "Except Machinery and Equipment", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Office", "Accounting and Computing Machinery", "Manufacture of Electrical Machinery and Apparatus N.e.c.", "Manufacture of Radio", 
+            "Television and Communication Equipment and Apparatus", "Manufacture of Medical", "Precision and Optical Instruments", "Watches and Clocks", "Manufacture of Motor Vehicles", "Trailers and Semi-trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture; Manufacturing N.e.c.", "Recycling", "Manufacture of Food Products", "Manufacture of Beverages", 
+            "Tobacco and Related_x0002_products", "Manufacture of Cotton Textiles", "Manufacture of Wool Silk and Man-made Fibre Textiles", "Manufacture of Jute and Other Vegetable Fibre Texliies (except Cotton)", "Manufacture of Textile Products (including Wearing Apparel)", "Manufacture of Wood and Wood Products; Furniture and Fixtures", "Manufacture of Paper and Paper Products and Printing Publishing & Allied Industries", 
+            "Manufacture of Leather and Products of Leather", "Fur &:: Substitutes of Leather", "Manufacture of Basic Chemicals and Chemical Products (except Products of Petroleum and Coal)", "Manufacture of Rubber", "Plastic", "Petroleum and Coal Products; Processing of Nuclear Fuels", "Manufacture of Non-metallic Mineral Products", "Basic Metal and Alloys Industries", 
+            "Manufacture of Metal Products and Parts", "Except Machinery and Equipment", "Manufacturing of Machinery and Equipment Other Than Transport Manufacture equipment of Machinery (manufacture and Equipment of Scientific Otherequip- Than Ment", "Photographic! Cinematographic Equipment and Watches & Clocks is C1assifiedindivision 38)", "Manufacture of Transport Equipment and Parts", "Other Manufacturing Industries", "Repair of Capital Goods"]}
+          ]
+        },
+        {
+          "name": "2011-12",
+          "description": "",
+          "filters": [
+            {"Select Frequency":["Annually", "Monthly"]},
+            {"Financial Year":["2010-11", "2009-10", "2008-09", "2007-08", "2006-07", "2005-06", "2004-05", "2003-04", "2002-03", "2001-02", "2000-01", "1999-00", "1998-99", "1997-98", "1996-97", "1995-96", "1994-95"]},
+            {"Type":["Select All", "Sectoral", "Use-based category", "General"]},
+            {"Category":["Select All", "Mining", "Manufacturing", "Electricity", "General", "Primary Goods", "Capital Goods", "Intermediate Goods", "Infrastructure/ Construction Goods", "Consumer Durables", "Consumer Non-durables", "Basic Goods"]},
+            {"Subcategory":["Select All", "Manufacture of Food Products", "Manufacture of Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel", "Manufacture of Leather and Related Products", "Manufacture of Wood and Products of Wood and Cork", "Except Furniture; Manufacture of Articles of Straw and Plaiting Materials", 
+            "Manufacture of Paper and Paper Products", "Printing and Reproduction of Recorded Media", "Manufacture of Coke and Refined Petroleum Products", "Manufacture of Chemicals and Chemical Products", "Manufacture of Pharmaceuticals", "Medicinal Chemical and Botanical Products", "Manufacture of Rubber and Plastics Products", "Manufacture of Other Non-metallic Mineral Products", 
+            "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products", "Except Machinery and Equipment", "Manufacture of Computer", "Electronic and Optical Products", "Manufacture of Electrical Equipment", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Motor Vehicles", "Trailers and Semi-trailers", "Manufacture of Other Transport Equipment", 
+            "Manufacture of Furniture", "Other Manufacturing", "Manufacture of Food Products and Beverages", "Manufacture of Tobacco Products", "Manufacture of Textiles", "Manufacture of Wearing Apparel; Dressing and Dyeing of Fur", "Tanning and Dressing of Leather; Manufacture of Luggage", "Handbags", "Saddlery", "Harness and Footwear", "Manufacture of Wood and of Products of Wood and Cork", 
+            "Except Furniture; Manufacture of Articles of Straw and Plaiting Materials", "Manufacture of Paper and Paper Products", "Publishing", "Printing and Reproduction of Recorded Media", "Manufacture of Coke", "Refined Petroleum Products and Nuclear Fuel", "Manufacture of Chemicals and Chemical Products", "Manufacture of Rubber and Plastics Products", 
+            "Manufacture of Other Non-metallic Mineral Products", "Manufacture of Basic Metals", "Manufacture of Fabricated Metal Products", "Except Machinery and Equipment", "Manufacture of Machinery and Equipment N.e.c.", "Manufacture of Office", "Accounting and Computing Machinery", "Manufacture of Electrical Machinery and Apparatus N.e.c.", "Manufacture of Radio", 
+            "Television and Communication Equipment and Apparatus", "Manufacture of Medical", "Precision and Optical Instruments", "Watches and Clocks", "Manufacture of Motor Vehicles", "Trailers and Semi-trailers", "Manufacture of Other Transport Equipment", "Manufacture of Furniture; Manufacturing N.e.c.", "Recycling", "Manufacture of Food Products", "Manufacture of Beverages", 
+            "Tobacco and Related_x0002_products", "Manufacture of Cotton Textiles", "Manufacture of Wool Silk and Man-made Fibre Textiles", "Manufacture of Jute and Other Vegetable Fibre Texliies (except Cotton)", "Manufacture of Textile Products (including Wearing Apparel)", "Manufacture of Wood and Wood Products; Furniture and Fixtures", "Manufacture of Paper and Paper Products and Printing Publishing & Allied Industries", 
+            "Manufacture of Leather and Products of Leather", "Fur &:: Substitutes of Leather", "Manufacture of Basic Chemicals and Chemical Products (except Products of Petroleum and Coal)", "Manufacture of Rubber", "Plastic", "Petroleum and Coal Products; Processing of Nuclear Fuels", "Manufacture of Non-metallic Mineral Products", "Basic Metal and Alloys Industries", 
+            "Manufacture of Metal Products and Parts", "Except Machinery and Equipment", "Manufacturing of Machinery and Equipment Other Than Transport Manufacture equipment of Machinery (manufacture and Equipment of Scientific Otherequip- Than Ment", "Photographic! Cinematographic Equipment and Watches & Clocks is C1assifiedindivision 38)", "Manufacture of Transport Equipment and Parts", "Other Manufacturing Industries", "Repair of Capital Goods"]}
+          ]
+        }
+      ]
+    },
+    "CPI": {
+      "description": "Consumer Price Index (CPI) is designed to measure the changes over time in general level of retail prices of selected goods and services that households purchase for the purpose of consumption. Consumer Food Price Index (CFPI) are being compiled as weighted average of the indices of the ten subgroups, out of 12 sub-groups contained in ‘Food and Beverages’ group, excluding ‘Non-alcoholic beverages’ and ‘Prepared meals, snacks, sweets etc.’. The CPI and CFPI is compiled at the All India level for the Rural, Urban & Combined Sector.",
+      "indicators": [
+        {
+          "name": "Group",
+          "description": "Group refers to a higher-level aggregation of consumer items, organized by broad expenditure categories such as Food and Beverages, Miscellaneous, Housing, Clothing and Footwear, etc. Each group may further include a subgroup representing more specific consumption themes (e.g., Personal Care and Effects, Education, Cereals and Products). This level helps in analyzing inflation trends across major categories of household consumption.",
+          "filters": [
+            {"Series":["current", "back", "SelectAll"]},
+            {"Year":["Select All", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]},
+            {"Month":["Select All", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]},
+            {"State":["all india", "select all", "andhra pradesh", "arunachal pradesh", "assam", "bihar", "chhattisgarh", "goa", "gujarat", "haryana", "himachal pradesh", "jharkhand", "karnataka", "kerala", "madhya pradesh", "maharashtra", "manipur", "meghalaya", "mizoram", "nagaland", "odisha", "punjab", "rajasthan", "sikkim", "tamil nadu", "telangana", "tripura", "uttar pradesh", "uttarakhand", "west bengal", "andaman and nicobar", "ladakh", "chandigarh", "dadra and nagar haveli and daman and diu", "delhi", "jammu and kashmir", "lakshadweep", "puducherry"]},
+            {"Sector":["select all", "rural", "urban", "combined"]},
+            {"Group":["select all", "Main Category", "Food and Beverages", "Pan", "Tobacco and Intoxicants", "Clothing and Footwear", "Housing", "Fuel and Light", "Miscellaneous", "Consumer Food Price", "General"]},
+            {"Subgroup":["Clothing", "Footwear", "Egg", "Milk and Products", "Oils and Fats", "Fruits", "Vegetables", "Pulses and Products", "Non-alcoholic Beverages", "Prepared Meals, Snacks, Sweets etc.", "Household Goods and Services", "Health", "Transport and Communication", "Recreation and Amusement", "Sugar and Confectionery", "Spices", "Education", "Personal Care and Effects", "Cereals and Products", "Meat and Fish", "Cereal and Products", "Pulses and Pulse Products", "Oils and Fats", "Meat;fish; etc", "Milk and Milk Products", "Spices and Condiments", "Vegetables"]}
+            ]
+          },
+          {
+            "name": "Item",
+            "description": "Item represents the most granular level of consumer goods or services tracked individually in the index. Examples include Apple, Air Conditioner, Almirah, Bed Sheet, etc. The Item level provides detailed insight into price movements for specific products or services consumed by households.",
+            "filters": [
+              {"Year":["select all", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]},
+              {"Month":["select all", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]},
+              {"Item":["rice – pds", "rice – other sources", "chira",  "muri", "other rice products", "wheat/ atta – pds", "wheat/ atta – other sources", "maida", "suji", "rawa", "sewai", "noodles", "bread (bakery)", "biscuits", "chocolates", "etc.", "other cereals", "cereal substitutes: tapioca", "etc.", "jowar & its products", "bajra & its products", "maize & products", "small millets & their products", "ragi & its products", "grinding charges", "goat meat/mutton", "beef/ buffalo meat", "pork", "chicken", "others: birds", "crab", "oyster", "tortoise", "etc.", 
+              "fish", "prawn", "eggs (no.)", "milk: liquid (litre)", "baby food", "milk: condensed/ powder", "curd", "other milk products","mustard oil","groundnut oil","coconut oil","refined oil [sunflower","soyabean","saffola","etc.]","ghee","butter","vanaspati","margarine","banana (no.)","jackfruit","watermelon","pineapple (no.)","coconut (no.)","green coconut (no.)","guava","singara","orange","mausami (no.)","papaya","mango","kharbooza","pears/nashpati","berries","leechi","apple","grapes","other fresh fruits","coconut: copra","groundnut","dates","cashewnut",
+              "walnut","other nuts","raisin","kishmish","monacca","etc.","other dry fruits","potato","onion","radish","carrot","garlic (gm)","ginger (gm)","palak/other leafy vegetables","tomato","brinjal","cauliflower","cabbage","green chillies","lady's finger","parwal/patal","kundru","gourd","pumpkin","peas (vegetables)","beans","barbati","lemon (no.)","other vegetables","pickles (gm)","chips (gm)","arhar","tur","gram: split","gram: whole","moong","masur","urd","peas (pulses)","khesari","other pulses","gram products","besan","other pulse products","sugar - pds",
+              "sugar - other sources","gur","candy","misri","honey","sauce","jam","jelly (gm)","ice-cream","salt","jeera (gm)","dhania (gm)","turmeric (gm)","black pepper (gm)","dry chillies (gm)","tamarind (gm)","curry powder (gm)","oilseeds (gm)","tea: cups (no.)","coffee: cups (no.)","cooked meals purchased (no.)","cooked snacks purchased [samosa","puri","paratha","burger","chowmein","idli","dosa","vada","chops","pakoras","pao bhaji","etc.]","prepared sweets","cake","pastry","papad","bhujia","namkeen","mixture","chanachur","other packaged processed food",
+              "tea: leaf (gm)","coffee: powder (gm)","mineral water (litre)","cold beverages: bottled/canned (litre)","fruit juice and shake (litre)","other beverages: cocoa","chocolate","etc.","rice","chira","muri / murmura","other rice products(specify)","rice pds","wheat/atta-pds","wheat/atta-other sources","maida","suji/ rawa","sewai","noodles","bread: bakery","other wheat products(daliya etc.)-specify","jowar & products","bajra & products","maize & products","barley & products","small millets & products","ragi & products","other cereals(specify)",
+              "cereal substitute(tapioca/ jackfruit seed etc)","grinding charges","arhar/ tur","gram: split","gram: whole","moong","masur","urd","peas","soyabean","khesari","other pulses (specify)","gram products (sattu etc): specify","besan","other pulse products(specify)","vanaspati","mustard oil","groundnut oil","coconut oil (edible)","other edible oil(saffola/sunflower etc.)specify","eggs","fish","prawn","goat meat / mutton","beef/ buffalo meat","pork","chicken","othersbirds(crab/oyster/tortoise)-specify","liquid milk","baby food(lactogen/amulspray etc)",
+              "milk: condensed/powder","curd","ghee","butter","ice-cream","other milk products","salt","turmeric","black pepper","dry chillies","tamarind","curry powder","oil seeds","other spices","potato","onion","radish","carrot","turnip","beet","sweet potato","arum","pumpkin","gourd","bitter gourd","cucumber","parwal","patal","jhinga","torai","snake gourd","papaya: green","cauliflower","cabbage","brinjal","ladys finger","palak/other leafy vegs.","french beans and barbati","tomato","peas","chillis: green","capsicum","plantain: green","jackfruit: green","lemon",
+              "garlic","ginger","other vegetables(specify)","banana","jackfruit","watermelon","pineapple","coconut","guava","singara","orange","mausami","papaya","mango","kharbooza","pears","naspati","berries","leechi","apple","grapes","other fresh fruits(specify)","coconut: copra","ground nut","dates","cashew nut","walnut","other nut(specify)","raisin","kishmish","monacca etc.","other dry fruit(specify)","sugar","sugar pds","gur","candy","misri","honey","tea: leaf","coffee: powder","tea: cups","coffee: cups","cold beverages","fruit juice and shake","coconut: green(tender)",
+              "other beverages(specify)","biscuits","salted refreshments","prepared sweets","cooked meals","cake","pastry","pickles","sauce","jam / jelly","other processed food(corn flakes etc)-specify","pan: leaf","pan: finished","supari","lime","katha","other ingredients for pan(specify)","bidi","cigarettes","leaf tobacco","snuff","hookah tobacco","cheroot","zarda kimam surti","other tobacco products","toddy", "country liquor (desi)", "beer", "foreign liquor/refined liquor(indian made)", "other intoxicants(specify)", "country liquor (litre)", "foreign/refined liquor or wine (litre)", "monthly maintain"]}
+
+          ]
+        }
+      ]
+    },
+    "ASI": {
+      "description": "Annual Survey of Industries broadly covers the manufacturing units in the registered sector. It provides comprehensive information relating to input, output, value added, employment, assets etc. of the registered factories.Fixed Capital, Working Capital, No. of Employees, Wages & Salaries, Fuels Consumed, Depreciation, Gross Value Added, Net Value Added, Total Emoluments, Total Input, Total Output Etc. For details of statistical concepts and definitions including major statistical variables used in the survey",
+      "indicators": [
+        {
+          "name": "2008",
+          "description": "",
+          "filters": [
+            {"Year":["2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09"]},
+            {"Indicator":["Number of Factories", "Factories in Operation", "Fixed Capital", "Physical Working Capital", "Working Capital", "Invested Capital", "Gross Value of Addition to Fixed Capital", "Rent Paid for Fixed Assets", "Outstanding Loan", "Interest Paid", "Rent Received for Fixed Asset", "Interest Received", "Gross Value of Plant & Machinery", "Value of Product and By-Product", "Total Output", "Fuels Consumed", "Materials Consumed", "Total Inputs", "Gross Value Added", "Depreciation", "Net Value Added", "Net Fixed Capital Formation", "Gross Fixed Capital Formation", "Addition in Stock of Materials, Fuels, Semi Finished Goods, Finshed Goods etc.", "Addition in Stock of Materials, Fuels etc.", "Addition in Stock of Semi Finished Goods", "Addition in Stock of Finished Goods", "Gross Capital Formation", "Net Income", "Net Profit", "Total Number of Persons Engaged", "Total Number of Workers", "No. of Directly Employed  Workers", "No. of Directly Employed Male Workers", "No. of Directly Employed Female Workers", "No. of Directly Employed Children Workers", "No. of Workers employed Through Contractors", "No. of Employees Other Than Workers", "No. of Employees Other Than Workers -Supervisory and Managerial", "No. of Employees Other Than Workers -Other Employees", "Unpaid family members-proprietor etc", "Total Mandays Employed", "Wages and Salaries Including Employer's Contribution", "Wages and Salaries Including Bonus", "Wages and Salaries", "Wages and Salary of Workers", "Wages and Salary of Supervisory & Managerial Employees", "Wages and Salary of  Other Employees", "Bonus to All Staff", "Employers' Contribution", "Quantity of Coal Consumed", "Value of Coal Consumed", "Quantity of Electricity Purchased and Consumed", "Value of Electricity Purchased  and Consumed", "Value of Petroleum Products Consumed", "Value of Other Fuels Consumed", "Total Value of Fuel Consumed", "Mandays-Workers", "Total Emoluments", "Workmen & Staff Welfare Exps" ]},
+            {"State":["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"NIC Type":["Select All", "2-Digit", "3-Digit", "4-Digit"]}
+          ]
+        },
+        {
+          "name": "2004",
+          "description": "",
+          "filters": [  
+            {"Year":["2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09"]},
+            {"Indicator":["Number of Factories", "Factories in Operation", "Fixed Capital", "Physical Working Capital", "Working Capital", "Invested Capital", "Gross Value of Addition to Fixed Capital", "Rent Paid for Fixed Assets", "Outstanding Loan", "Interest Paid", "Rent Received for Fixed Asset", "Interest Received", "Gross Value of Plant & Machinery", "Value of Product and By-Product", "Total Output", "Fuels Consumed", "Materials Consumed", "Total Inputs", "Gross Value Added", "Depreciation", "Net Value Added", "Net Fixed Capital Formation", "Gross Fixed Capital Formation", "Addition in Stock of Materials, Fuels, Semi Finished Goods, Finshed Goods etc.", "Addition in Stock of Materials, Fuels etc.", "Addition in Stock of Semi Finished Goods", "Addition in Stock of Finished Goods", "Gross Capital Formation", "Net Income", "Net Profit", "Total Number of Persons Engaged", "Total Number of Workers", "No. of Directly Employed  Workers", "No. of Directly Employed Male Workers", "No. of Directly Employed Female Workers", "No. of Directly Employed Children Workers", "No. of Workers employed Through Contractors", "No. of Employees Other Than Workers", "No. of Employees Other Than Workers -Supervisory and Managerial", "No. of Employees Other Than Workers -Other Employees", "Unpaid family members-proprietor etc", "Total Mandays Employed", "Wages and Salaries Including Employer's Contribution", "Wages and Salaries Including Bonus", "Wages and Salaries", "Wages and Salary of Workers", "Wages and Salary of Supervisory & Managerial Employees", "Wages and Salary of  Other Employees", "Bonus to All Staff", "Employers' Contribution", "Quantity of Coal Consumed", "Value of Coal Consumed", "Quantity of Electricity Purchased and Consumed", "Value of Electricity Purchased  and Consumed", "Value of Petroleum Products Consumed", "Value of Other Fuels Consumed", "Total Value of Fuel Consumed", "Mandays-Workers", "Total Emoluments", "Workmen & Staff Welfare Exps"]},
+            {"State":["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"NIC Type":["Select All", "2-Digit", "3-Digit", "4-Digit"]}
+          ]
+        },
+        {
+          "name": "1998",
+          "description": "",
+          "filters": [
+            {"Year":["2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09"]},
+            {"Indicator":["Number of Factories", "Factories in Operation", "Fixed Capital", "Physical Working Capital", "Working Capital", "Invested Capital", "Gross Value of Addition to Fixed Capital", "Rent Paid for Fixed Assets", "Outstanding Loan", "Interest Paid", "Rent Received for Fixed Asset", "Interest Received", "Gross Value of Plant & Machinery", "Value of Product and By-Product", "Total Output", "Fuels Consumed", "Materials Consumed", "Total Inputs", "Gross Value Added", "Depreciation", "Net Value Added", "Net Fixed Capital Formation", "Gross Fixed Capital Formation", "Addition in Stock of Materials, Fuels, Semi Finished Goods, Finshed Goods etc.", "Addition in Stock of Materials, Fuels etc.", "Addition in Stock of Semi Finished Goods", "Addition in Stock of Finished Goods", "Gross Capital Formation", "Net Income", "Net Profit", "Total Number of Persons Engaged", "Total Number of Workers", "No. of Directly Employed  Workers", "No. of Directly Employed Male Workers", "No. of Directly Employed Female Workers", "No. of Directly Employed Children Workers", "No. of Workers employed Through Contractors", "No. of Employees Other Than Workers", "No. of Employees Other Than Workers -Supervisory and Managerial", "No. of Employees Other Than Workers -Other Employees", "Unpaid family members-proprietor etc", "Total Mandays Employed", "Wages and Salaries Including Employer's Contribution", "Wages and Salaries Including Bonus", "Wages and Salaries", "Wages and Salary of Workers", "Wages and Salary of Supervisory & Managerial Employees", "Wages and Salary of  Other Employees", "Bonus to All Staff", "Employers' Contribution", "Quantity of Coal Consumed", "Value of Coal Consumed", "Quantity of Electricity Purchased and Consumed", "Value of Electricity Purchased  and Consumed", "Value of Petroleum Products Consumed", "Value of Other Fuels Consumed", "Total Value of Fuel Consumed", "Mandays-Workers", "Total Emoluments", "Workmen & Staff Welfare Exps"]},
+            {"State":["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"NIC Type":["Select All", "2-Digit", "3-Digit", "4-Digit"]}
+
+          ]
+        },
+        {
+          "name": "1987",
+          "description": "",
+          "filters": [
+            {"Year":["2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16", "2014-15", "2013-14", "2012-13", "2011-12", "2010-11", "2009-10", "2008-09"]},
+            {"Indicator":["Number of Factories", "Factories in Operation", "Fixed Capital", "Physical Working Capital", "Working Capital", "Invested Capital", "Gross Value of Addition to Fixed Capital", "Rent Paid for Fixed Assets", "Outstanding Loan", "Interest Paid", "Rent Received for Fixed Asset", "Interest Received", "Gross Value of Plant & Machinery", "Value of Product and By-Product", "Total Output", "Fuels Consumed", "Materials Consumed", "Total Inputs", "Gross Value Added", "Depreciation", "Net Value Added", "Net Fixed Capital Formation", "Gross Fixed Capital Formation", "Addition in Stock of Materials, Fuels, Semi Finished Goods, Finshed Goods etc.", "Addition in Stock of Materials, Fuels etc.", "Addition in Stock of Semi Finished Goods", "Addition in Stock of Finished Goods", "Gross Capital Formation", "Net Income", "Net Profit", "Total Number of Persons Engaged", "Total Number of Workers", "No. of Directly Employed  Workers", "No. of Directly Employed Male Workers", "No. of Directly Employed Female Workers", "No. of Directly Employed Children Workers", "No. of Workers employed Through Contractors", "No. of Employees Other Than Workers", "No. of Employees Other Than Workers -Supervisory and Managerial", "No. of Employees Other Than Workers -Other Employees", "Unpaid family members-proprietor etc", "Total Mandays Employed", "Wages and Salaries Including Employer's Contribution", "Wages and Salaries Including Bonus", "Wages and Salaries", "Wages and Salary of Workers", "Wages and Salary of Supervisory & Managerial Employees", "Wages and Salary of  Other Employees", "Bonus to All Staff", "Employers' Contribution", "Quantity of Coal Consumed", "Value of Coal Consumed", "Quantity of Electricity Purchased and Consumed", "Value of Electricity Purchased  and Consumed", "Value of Petroleum Products Consumed", "Value of Other Fuels Consumed", "Total Value of Fuel Consumed", "Mandays-Workers", "Total Emoluments", "Workmen & Staff Welfare Exps"]},
+            {"State":["All India", "Select All", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar", "Ladakh", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Lakshadweep", "Puducherry"]},
+            {"NIC Type":["Select All", "2-Digit", "3-Digit", "4-Digit"]}
+
+          ]
+        }
+      ]
+
+    }
+
+}
+}
